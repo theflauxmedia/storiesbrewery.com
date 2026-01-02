@@ -9,7 +9,7 @@ const DeveloperCredit = () => {
             <img 
               src="/flaux.png"
               alt="Stories Brewery & Coffee Logo" 
-              className="h-6 w-auto brightness-0 invert logo-slide"
+              className="h-10 w-auto brightness-0 invert logo-slide"
             />
           </div>
           <p className="text-sm">

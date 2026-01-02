@@ -7,16 +7,16 @@ interface BrandLogoProps {
 
 const BrandLogo = ({ 
   className = "", 
-  size = "md"
+  size = "lg"
 }: BrandLogoProps) => {
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   const staticLogo = { src: "/logos/stbc.png", alt: "Stories Brewery & Coffee" };
 
   const sizeClasses = {
-    sm: "h-8 w-auto",
-    md: "h-12 w-auto",
-    lg: "h-16 w-auto"
+    sm: "h-10 w-auto",
+    md: "h-14 w-auto",
+    lg: "h-20 w-auto"
   };
 
   useEffect(() => {

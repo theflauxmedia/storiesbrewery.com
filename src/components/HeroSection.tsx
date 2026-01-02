@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { RESERVATION_LINK } from "@/lib/constants";
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -96,11 +97,14 @@ const HeroSection = () => {
               </p> */}
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button
-                  className="btn-hero text-lg px-8 py-4"
-                  onClick={() => window.open("tel:+919876543210")}
-                >
-                  Reserve Your Table
+                <Button className="btn-hero text-lg px-8 py-4" asChild>
+                  <a
+                    href={RESERVATION_LINK}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Reserve Your Table
+                  </a>
                 </Button>
                 <Button
                   className="btn-hero-secondary text-lg px-8 py-4"

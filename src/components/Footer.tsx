@@ -1,6 +1,7 @@
 import { MapPin, Calendar, ArrowRight, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import BrandLogo from "@/components/BrandLogo";
+import { RESERVATION_LINK } from "@/lib/constants";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -33,11 +34,13 @@ const Footer = () => {
             
             {/* CTA Buttons */}
             <div className="space-y-4">
-              <Button 
-                className="btn-hero w-full group"
-                asChild
-              >
-                <a href="tel:+919876543210" className="inline-flex items-center gap-2">
+              <Button className="btn-hero w-full group" asChild>
+                <a
+                  href={RESERVATION_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2"
+                >
                   <Calendar className="w-4 h-4" />
                   <span>Make Reservation</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -110,9 +113,14 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border/30 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-foreground/60">
-              © {currentYear} Stories Brewery & Kitchen. All rights reserved.
-            </p>
+            <div className="text-center md:text-left">
+              <p className="text-sm text-foreground/60">
+                © {currentYear} Stories Brewery & Kitchen. All rights reserved.
+              </p>
+              <p className="text-xs text-foreground/50">
+FOOD BUFFS LLP.
+              </p>
+            </div>
             
             <div className="flex flex-wrap items-center gap-6 text-xs text-foreground/60">
               <a href="#" className="hover:text-accent transition-colors">Privacy Policy</a>

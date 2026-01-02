@@ -141,7 +141,7 @@ const Media = () => {
                           <Button
                             variant="outline"
                             size="sm"
-                            className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
+                            className="w-full text-black group-hover:bg-primary group-hover:text-black transition-colors"
                             asChild
                           >
                             <a
@@ -203,7 +203,7 @@ const Media = () => {
                           <Button
                             variant="outline"
                             size="sm"
-                            className="w-full group-hover:bg-accent group-hover:text-accent-foreground transition-colors"
+                            className="w-full text-black group-hover:bg-accent group-hover:text-black transition-colors"
                             disabled
                           >
                             <span className="inline-flex items-center gap-2">

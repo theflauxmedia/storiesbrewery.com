@@ -299,7 +299,7 @@ Stories isn’t just a place to eat and drink. It’s a space where flavor meets
                           <Button
                             variant="outline"
                             size="sm"
-                            className="w-full group-hover:bg-accent group-hover:text-accent-foreground transition-colors"
+                            className="w-full text-black group-hover:bg-accent group-hover:text-black transition-colors"
                             asChild
                           >
                             <a
@@ -371,7 +371,7 @@ Stories isn’t just a place to eat and drink. It’s a space where flavor meets
                           <Button
                             variant="outline"
                             size="sm"
-                            className="w-full group-hover:bg-accent group-hover:text-accent-foreground transition-colors"
+                            className="w-full text-black group-hover:bg-accent group-hover:text-black transition-colors"
                             disabled={!post.isPublished}
                             asChild={post.isPublished}
                           >

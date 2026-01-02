@@ -93,7 +93,7 @@ const BlogSection = () => {
 
                 <Button
                   variant="outline"
-                                      className="w-fit group-hover:bg-accent group-hover:text-accent-foreground transition-colors"
+                  className="w-fit text-black group-hover:bg-accent group-hover:text-black transition-colors"
                   asChild
                 >
                   <a

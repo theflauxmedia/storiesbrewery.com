@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import BrandLogo from "@/components/BrandLogo";
+import { RESERVATION_LINK } from "@/lib/constants";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,7 +36,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <BrandLogo size="md" />
+            <BrandLogo size="lg" />
           </div>
 
           {/* Desktop Navigation */}
@@ -53,7 +54,15 @@ const Navigation = () => {
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Button className="btn-hero">Reserve Now</Button>
+            <Button className="btn-hero" asChild>
+              <a
+                href={RESERVATION_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Reserve Now
+              </a>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -85,7 +94,15 @@ const Navigation = () => {
               ))}
 
               <div className="px-3 py-2">
-                <Button className="btn-hero w-full">Reserve Now</Button>
+                <Button className="btn-hero w-full" asChild>
+                  <a
+                    href={RESERVATION_LINK}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Reserve Now
+                  </a>
+                </Button>
               </div>
             </div>
           </div>

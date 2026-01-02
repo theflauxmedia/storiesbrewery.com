@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Camera } from "lucide-react";
+import { RESERVATION_LINK } from "@/lib/constants";
 
 const GallerySection = () => {
   const galleryImages = [
@@ -111,12 +112,16 @@ const GallerySection = () => {
         {/* Call to Action */}
         <div className="text-center">
           <p className="text-muted-foreground mb-6">
-            Experience these moments in person&mdash;call us to plan your visit
+            Experience these moments in person&mdash;reserve online or give us a call.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild>
-              <a href="tel:+919876543210">
-                Call to Reserve
+              <a
+                href={RESERVATION_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Reserve Online
               </a>
             </Button>
             <Button variant="outline" asChild>

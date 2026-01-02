@@ -5,6 +5,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import DeveloperCredit from "@/components/DeveloperCredit";
 import SEOHead from "@/components/SEOHead";
+import { RESERVATION_LINK } from "@/lib/constants";
 
 const OurBrews = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -113,6 +114,61 @@ const OurBrews = () => {
       structure: "Full-bodied with great carbonation",
       tags: ["wheat", "strong"],
       gradient: "from-indigo-900/30 to-indigo-600/30"
+    },
+    {
+      name: "Kölsch",
+      description: "A crisp golden ale from Cologne, Germany, this beer marries the finesse of a lager with the fruitiness of an ale. Light, elegant, and endlessly drinkable, it pours pale straw with a delicate white head and finishes clean and snappy.",
+      abv: "4.7%",
+      ibu: "14",
+      color: "Pale Straw",
+      flavor: "Light malt sweetness with a refreshing herbal bitterness and a whisper of fruitiness",
+      structure: "Light, elegant",
+      tags: ["crisp", "light", "balanced"],
+      gradient: "from-yellow-900/30 to-yellow-600/30"
+    },
+    {
+      name: "Ginger & Spice Wheat Ale",
+      description: "A light-bodied, smooth wheat beer spiced with real ginger and subtle cinnamon. Citrusy brightness meets warming Indian chai flavors in a brew that's soft, aromatic, and gently spiced — perfect with both savory and sweet dishes.",
+      abv: "5.0%",
+      ibu: "6",
+      color: "Pale Golden",
+      flavor: "Gently spicy, mildly sweet, smooth finish with ginger warmth",
+      structure: "Light-bodied, smooth",
+      tags: ["wheat", "spiced", "aromatic"],
+      gradient: "from-amber-900/30 to-amber-600/30"
+    },
+    {
+      name: "Maibock",
+      description: "A traditional German spring lager with rich malt sweetness, hints of dark fruit, light caramel, and a mild hop balance. Smooth and full-bodied, it's a strong yet elegant beer ideal for sipping.",
+      abv: "6.8%",
+      ibu: "17",
+      color: "Rich Golden",
+      flavor: "Rich malt, dark fruit, honey, caramel undertones, low bitterness",
+      structure: "Full-bodied, smooth",
+      tags: ["strong", "malty", "seasonal"],
+      gradient: "from-amber-900/30 to-yellow-800/30"
+    },
+    {
+      name: "Lichtenhainer – Smoked Wheat Beer",
+      description: "A rare, revived German wheat beer with a lightly smoky character. Brewed using smoked malt, it presents a unique balance of gentle tartness and subtle smoke. Expect soft aromas of toasted bread, a hint of caramel, and a clean mouthfeel. A truly distinct beer that stands out from traditional wheat styles.",
+      abv: "4.3%",
+      ibu: "6",
+      color: "Pale Straw",
+      flavor: "Light smoke, tart wheat, subtle caramel",
+      structure: "Clean mouthfeel",
+      tags: ["smoked", "wheat"],
+      gradient: "from-gray-800/30 to-gray-600/30"
+    },
+    {
+      name: "Abbey Tripel",
+      description: "A silky smooth, high-alcohol Belgian-style beer with a creamy white froth and a straw-yellow hue. Bursting with complex spice notes of coriander, jeera, and floral yeast aromas, this strong ale delivers a warming finish with a zingy peppery aftertaste. Elegant yet bold, it offers a delightful balance of effervescence, spice, and strength.",
+      abv: "8.5%",
+      ibu: "15",
+      color: "Straw-yellow",
+      flavor: "Rich, spicy, floral, with warm alcohol and a peppery kick",
+      structure: "Silky smooth, effervescent",
+      tags: ["strong", "spiced", "fruity"],
+      gradient: "from-yellow-700/30 to-amber-700/30"
     }
   ];
 
@@ -163,10 +219,10 @@ const OurBrews = () => {
                   key={filter}
                   variant={activeFilter === filter ? "default" : "outline"}
                   onClick={() => setActiveFilter(filter)}
-                  className={`capitalize ${
+                  className={`capitalize text-black hover:text-black ${
                     activeFilter === filter 
-                      ? "bg-accent text-background hover:bg-accent/90" 
-                      : "border-accent/30 text-accent hover:bg-accent/10"
+                      ? "bg-accent hover:bg-accent/90" 
+                      : "border-accent/30 hover:bg-accent/10"
                   }`}
                 >
                   {filter}
@@ -251,11 +307,18 @@ const OurBrews = () => {
             Visit any of our locations and discover your new favorite brew
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="btn-hero group">
-              <span>Make a Reservation</span>
-              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+            <Button className="btn-hero group" asChild>
+              <a
+                href={RESERVATION_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center"
+              >
+                <span>Make a Reservation</span>
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
-            <Button variant="outline" className="border-accent text-accent hover:bg-accent hover:text-background">
+            <Button variant="outline" className="border-accent text-black hover:bg-accent hover:text-black">
               View Full Menu
             </Button>
           </div>

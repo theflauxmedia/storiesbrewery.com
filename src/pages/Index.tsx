@@ -24,6 +24,7 @@ const Index = () => {
           <AboutSection />
           <FeaturedBrews />
           <BlogSection />
+          <GallerySection />
         </main>
         <Footer />
         <DeveloperCredit />
