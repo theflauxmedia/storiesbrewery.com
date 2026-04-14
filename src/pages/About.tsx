@@ -65,8 +65,8 @@ const About = () => {
     <>
       <SEOHead 
         title="About Stories Brewery & Kitchen - Our Journey & Vision | Bengaluru's Greenest Brewery"
-        description="Learn about Stories Brewery & Kitchen's journey from vision to reality. Founded by Nerall Bhakai, featuring 50,000+ plants across 4 themed areas - Amazon, Maze, Brew & Penthouse. Discover our nature-infused dining experience."
-        keywords="about stories brewery, nerall bhakai founder, bengaluru brewery story, nature dining bengaluru, rooftop brewery about, craft beer bengaluru story"
+        description="Learn about Stories Brewery & Kitchen—Bengaluru’s nature-infused rooftop brewery and brewpub restaurant. From craft beer to premium dining, discover spaces designed for date nights, anniversaries, birthday parties, and corporate celebrations."
+        keywords="best brewery bangalore, best brewpub bangalore, rooftop restaurants bangalore, romantic dinner bangalore, date night bangalore, candlelight dinner bangalore, private dining bangalore, corporate party venue bangalore, birthday party pub bangalore"
         url="https://storiesbrewery.com/about"
       />
       <div className="min-h-screen bg-background">
@@ -98,6 +98,9 @@ const About = () => {
                 <div className="space-y-4 sm:space-y-6 text-base sm:text-lg text-foreground/80 leading-relaxed order-2 lg:order-1">
                   <p>
                     Stories Brewery & Kitchen is more than just a destination—it's a story of taste, ambiance, and culture.
+                  </p>
+                  <p>
+                    We’re built for both high-energy weekends and intimate evenings—think <strong>friends night out Bangalore</strong>, group celebrations, and a relaxed <strong>romantic dinner Bangalore</strong> on the rooftop.
                   </p>
                   <p>
                     Founded by <span className="text-accent font-semibold">Nerall Bhakai</span>, Stories is built on the belief that great experiences are rooted in nature and brought to life through design, flavor, and storytelling.
@@ -197,6 +200,20 @@ const About = () => {
                 Our mission is to elevate casual dining with a deeper sense of place, flavor, and storytelling. We're building a community that comes together not just for the beer or the food—but for the moments in between.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Celebrations & Date Nights */}
+      <section className="py-20 bg-gradient-to-b from-background to-secondary/10">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-black text-foreground mb-6 text-center">
+              Celebrate in Bengaluru’s rooftop brewery
+            </h2>
+            <p className="text-lg sm:text-xl text-foreground/80 leading-relaxed text-center max-w-4xl mx-auto">
+              Stories is a <strong>brewpub with food Bangalore</strong> and a premium dining space for special moments—<strong>date night Bangalore</strong>, <strong>anniversary dinner Bangalore</strong>, <strong>private dining Bangalore</strong>, and group celebrations. Whether you’re looking for a <strong>best place to celebrate Bangalore</strong>, a <strong>corporate party venue Bangalore</strong>, or a cosy rooftop table, we make it feel like an occasion.
+            </p>
           </div>
         </div>
       </section>

@@ -180,8 +180,8 @@ const OurBrews = () => {
     <>
       <SEOHead 
         title="Our Craft Brews - Stories Brewery Beer Menu | Handcrafted Beers Bengaluru"
-        description="Explore Stories Brewery's handcrafted beer collection. From Wheat IPA and Jamun Witbier to Apple Cider and Belgian Wit - discover our signature brews made with passion in Bengaluru's greenest brewery."
-        keywords="stories brewery beer menu, craft beer bengaluru, wheat ipa, jamun witbier, apple cider bangalore, belgian wit, handcrafted beer, microbrewery beer menu, fresh beer bengaluru"
+        description="Explore craft beer in Bangalore at Stories Brewery & Kitchen—fresh in-house brews, ciders, and seasonal specials. Perfect for beer lovers, craft beer lovers, and anyone wondering where to drink craft beer in Bengaluru."
+        keywords="craft beer bangalore, best craft beer bangalore, craft beer near me, where to drink craft beer bangalore, beer lovers bangalore, craft beer lovers bangalore, microbrewery bangalore, brewery bangalore, best brewery ambience bangalore"
         url="https://storiesbrewery.com/our-brews"
       />
       <div className="min-h-screen bg-background">
@@ -200,6 +200,9 @@ const OurBrews = () => {
                 Explore the carefully crafted beers brewed in-house at Stories Brewery & Kitchen. 
                 Whether you're a hop head, a fruit-forward fan, or a wheat beer lover, there's a fresh 
                 pour waiting to tell your story.
+              </p>
+              <p className="text-base sm:text-lg text-foreground/70 max-w-3xl mx-auto leading-relaxed">
+                From crisp, easy-drinking pours to bold seasonal releases, this is <strong>craft beer Bangalore</strong> made for rooftop afternoons and late-night conversations—ideal for anyone searching <strong>craft beer near me</strong> in Bengaluru.
               </p>
             </div>
           </div>

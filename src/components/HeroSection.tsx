@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { ChevronLeft, ChevronRight, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RESERVATION_LINK } from "@/lib/constants";
@@ -6,20 +6,23 @@ import { RESERVATION_LINK } from "@/lib/constants";
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const slides = [
-    {
-      image: "/stbr/1.webp",
-      title: "Stories Brewery and Kitchen",
-      subtitle: "Where Nature Meets Craft",
-      location: "BTM Layout, Bengaluru",
-    },
-    {
-      image: "/stbr/8.webp",
-      title: "Stories Brewery and Kitchen",
-      subtitle: "Craft Beer Amongst Nature",
-      location: "BTM Layout, Bengaluru",
-    }
-  ];
+  const slides = useMemo(
+    () => [
+      {
+        image: "/stbr/1.webp",
+        title: "Stories Brewery and Kitchen",
+        subtitle: "Where Nature Meets Craft",
+        location: "BTM Layout, Bengaluru",
+      },
+      {
+        image: "/stbr/8.webp",
+        title: "Stories Brewery and Kitchen",
+        subtitle: "Craft Beer Amongst Nature",
+        location: "BTM Layout, Bengaluru",
+      }
+    ],
+    []
+  );
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -62,7 +65,7 @@ const HeroSection = () => {
         >
           <img
             src={slide.image}
-            alt={slide.title}
+            alt={`${slide.title} - rooftop brewery in Bangalore (BTM Layout) for craft beer & food`}
             className="w-full h-full object-cover animate-parallax"
             loading={index === currentSlide ? "eager" : "lazy"}
             decoding="async"

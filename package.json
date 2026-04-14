@@ -70,6 +70,8 @@
     "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react-swc": "^3.11.0",
     "autoprefixer": "^10.4.21",
+    "browserslist": "^4.28.2",
+    "caniuse-lite": "^1.0.30001788",
     "eslint": "^9.32.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
@@ -85,5 +87,13 @@
   "main": "eslint.config.js",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theflauxmedia/storiesbrewery.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/theflauxmedia/storiesbrewery.com/issues"
+  },
+  "homepage": "https://github.com/theflauxmedia/storiesbrewery.com#readme"
 }

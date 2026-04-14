@@ -4,7 +4,7 @@ import BrandLogo from "@/components/BrandLogo";
 import { RESERVATION_LINK } from "@/lib/constants";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
+  const currentYear = 2026;
 
   const locations = [
     { name: "BTM Layout", phone: "+91 98765 43210" }
@@ -29,6 +29,9 @@ const Footer = () => {
               <p className="text-foreground/70 text-sm leading-relaxed mb-6">
                 Experience nature-infused dining and craft brewing excellence across multiple locations. 
                 Where every visit tells a new story.
+              </p>
+              <p className="text-foreground/60 text-sm leading-relaxed">
+                Looking for a <strong>brewpub bangalore</strong> or a <strong>brewery near me</strong> in the BTM area? Stories is a <strong>brewpub restaurant Bangalore</strong>—a rooftop spot for <strong>craft beer Bangalore</strong>, great food, and celebrations.
               </p>
             </div>
             
@@ -70,7 +73,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={link.href}
-                    className="text-foreground/70 hover:text-accent transition-colors text-sm font-medium hover:translate-x-1 inline-block transition-transform"
+                    className="text-foreground/70 hover:text-accent transition-all text-sm font-medium hover:translate-x-1 inline-block"
                   >
                     {link.name}
                   </a>
